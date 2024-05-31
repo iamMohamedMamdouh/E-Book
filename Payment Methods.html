@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <link rel="shortcut icon" href="favicon2.ico" type="image/x-icon">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+      <link rel="stylesheet" href="/bootstrap.min.css">
+      <link rel="stylesheet" href="swiper-bundle.min.css">
+      <link rel="stylesheet" href="styles.css">
+      <title>Payment Methods</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+           <a href="index.php" class="nav__logo">
+              <i class="ri-book-3-line"></i>DOUHA
+           </a>
+           <div class="nav__menu">
+              <ul class="nav__list">
+        
+                 <li class="nav__item"> 
+                    <a href="index.php#home" class="nav__link" >
+                       <i class="ri-home-line"></i>
+                       <span>Home</span>
+                    </a>
+                 </li>
+    
+                 <li class="nav__item">
+                    <a href="index.php#featured" class="nav__link">
+                       <i class="ri-book-3-line"></i>
+                       <span>Featured</span>
+                    </a>
+                 </li>
+    
+                 <li class="nav__item">
+                    <a href="index.php#discount" class="nav__link">
+                       <i class="ri-price-tag-3-line"></i>
+                       <span>Discount</span>
+                    </a>
+                 </li>
+    
+                 <li class="nav__item">
+                    <a href="index.php#new" class="nav__link">
+                       <i class="ri-bookmark-line"></i>
+                       <span>New Books</span>
+                    </a>
+                 </li>
+    
+                 <li class="nav__item">
+                    <a href="index.php#testimonial" class="nav__link">
+                       <i class="ri-message-3-line"></i>
+                       <span>Testimonial</span>
+                    </a>
+                 </li>
+    
+              </ul>
+           </div>
+           <div class="nav__actions">
+              <!-- Serch button -->
+              <i class="ri-search-line search-button" id="search-button"></i>
+    
+              <!-- login button -->
+              <aside class="cartIcon">
+                <!-- Nav -->
+                <div class="nav-containt">
+                 <i class="ri-shopping-cart-line" id="cart-Icon" title="Your Cart"></i>
+                    <!-- cart -->
+                    <div class="Cart">
+                        <h1 class="cartTitle">Your Cart</h1>
+                        <!-- cartContent -->
+                        <div class="cart-content">
+                        </div>
+                        <!-- TOTAL -->
+                        <div class="total">
+                            <div class="total-title">Total</div>
+                            <div class="total-price"><sup class="currency">$</sup> 0</div>
+                        </div>
+                        <!-- BUY BUTTON -->
+                        <button type="button" class="btn-buy button  ">BUY NOW!</button>
+                        <!-- CART CLOSE -->
+                        <i class="ri-close-line" id="cart-close"></i> 
+                    </div>
+                </div>
+            </aside>
+            
+              <!-- Theme button -->
+              <a href=" "><i class="ri-moon-line change-theme" id="theme-button"></i></a>
+    
+    
+           </div>
+        </nav>
+        
+     </header>
+    
+     <!--                 SEARCH                    -->
+     <div class="search" id="search-content">
+        <form action="" class="search__form">
+           <i class="ri-search-line search__icon"></i>
+           <input type="search" placeholder="What are you looking for?" class="search__input">
+        </form>
+        <i class="ri-close-line search__close" id="search-close"></i>
+     </div>
+     <br><br>
+
+    <div class="container mt-5 new section new__container" style="text-align: center;color: var(--text-color); ">
+        <h1 class="text-center mb-4">Payment Methods</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header"style="background-color:var(--border-color);">
+                        PayPal
+                    </div>
+                    <div class="card-body" style="background-color:var(--container-color);">
+                        <img src="paypal.jpeg" alt="PayPal" class="img-fluid">
+                    </div>
+                    <div class="card-footer"style="background-color:var(--border-color);">
+                    <a href="paypal_payment.html"><button class="button btn-buy">Pay with PayPal</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header"style="background-color:var(--border-color);">
+                        Vodafone Cash
+                    </div>
+                    <div class="card-body"style="background-color:var(--container-color);">
+                        <img src="cash.jpeg" alt="Vodafone Cash" class="img-fluid">
+                    </div>
+                    <div class="card-footer"style="background-color:var(--border-color);">
+                        <a href="vodafone.php"><button class="button btn-buy">Pay with Vodafone Cash</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header"style="background-color:var(--border-color);">
+                        Credit Card
+                    </div>
+                    <div class="card-body"style="background-color:var(--container-color);">
+                        <img src="newcard.jpeg" alt="Credit Card" class="img-fluid">
+                    </div>
+                    <div class="card-footer"style="background-color:var(--border-color);">
+                        <a href="credit_card_payment.html"><button class="button btn-buy">Pay with Credit Card</button></a>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+     
+   
+   <div class="container mt-6   new__container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <a href="Invoice.php" type="submit"><button class="button btn-buy" >Complete Purchase</button></a>
+        </div>
+    </div>
+</div>
+<script src="/bootstrap.min.js"></script>
+<script src="/bootstrap.js"></script>
+<script src="/bootstrap.bundle.js"></script>
+<!--                 SCROLL UP                 -->
+<script src="scrollreveal.min.js"></script>
+ <script src="swiper-bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
+
